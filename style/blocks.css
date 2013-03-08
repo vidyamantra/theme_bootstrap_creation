@@ -1,0 +1,132 @@
+.block {
+margin-bottom:2em;
+border: 1px solid #eee;background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;padding: 10px;border-bottom: 2px solid #ccc;
+}
+.block .header{margin-bottom: 10px;}
+.block .header h2 { padding: .2em 0 0 .2em; margin: 0;
+font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #242424;
+    line-height: 28px;
+    font-family:Verdana,Geneva,Kalimati,sans-serif;
+}
+.block .header .block_action {float:right;margin:4px 0 3px 0;vertical-align:top;}
+.block .header .block_action img,
+.block .header .block_action input {margin:0 3px; width: 12px; height: 12px;}
+.block .header .commands { text-align: right; clear: both;}
+.block .header .commands > a { margin:0 3px; }
+.block .header .commands .icon img {width:12px;height:12px;}
+.block .content {padding:4px0;font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #777;
+    line-height: 24px;}
+.block .content a{font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #242424;
+    line-height: 24px;
+}
+.block .content a:hover{color: #7AB80E;text-decoration: none;}
+.block.hidden .content {display: none;}
+.block .content .userpicture {width:16px;height:16px;margin-right:6px;}
+.block .content .list li.listentry {clear:both;}
+.block .content .list .c0 {display:inline;}
+.block .content .list .c1 {margin-left:5px;display:inline;}
+.block .footer {margin-bottom: 4px;}
+.block .blockannotation {font-size:0.75em;margin: -1em 0 1em;}
+.block_navigation .block_tree li {overflow:hidden;}
+.block_calendar_upcoming .footer { margin-top: .5em; }
+
+/** block_list blocks need column stuffs **/
+.block.list_block .unlist > li > .column {display:inline-block;}
+.ie6 .block.list_block .unlist .column {display:inline;}
+
+.block.beingmoved {border-width: 2px;border-style: dashed;}
+.blockmovetarget {display: block;height: 1em;margin-bottom: 1em;border-width: 2px;border-style: dashed;}
+
+.block-region .invisible {opacity: 0.5;filter: alpha(opacity=50);}
+
+.block .block-hider-show,
+.block .block-hider-hide {cursor:pointer;}
+.block .block-hider-show,
+.block.hidden .block-hider-hide {display:none;}
+.block.hidden .block-hider-show {display:inline;}
+
+/** Overide for RTL layout **/
+.dir-rtl .block .header,
+.dir-rtl .block h2.header {text-align:right;}
+.dir-rtl .block .header .commands { text-align: left;}
+.dir-rtl .block .header .block_action { float: left; margin-left: 4px; margin-left: 0;}
+
+/*--------*/
+
+.block_calendar_month .calendar_filters ul{margin-left: 0;}
+.block_calendar_month .calendar_filters li{list-style: none;border-bottom: 1px solid #eee;padding: 4px 0;text-align: left;}
+.block_calendar_month .calendar_filters li span{margin-right: 5px;}
+
+
+
+.block_calendar_month h3{color: rgba(238,95,91,1);
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;text-align: left;}
+.block_calendar_month .content{text-align: center;}
+.block_calendar_month table{width: 100%;}
+.block_calendar_month table td, .block_calendar_month table th{padding:2px;font-weight: normal;}
+.block_course_list .content ul, .block_course_list .content li{border: none;background: none;box-shadow:none;}
+
+
+.block_tags ul.tag_cloud li{background-color: #7AB80E;margin-left: 4px;margin-top: 10px;display: inline-block;}
+.block_tags ul.tag_cloud li a{color: #fff;padding: 7px;display: block;}
+.block_tags ul.tag_cloud li a:hover{color: #000;}
+
+#region-post ul.unlist{border: none;box-shadow: none;}
+#region-post ul.unlist li{background: none;}
+.block_tags{background: none;border: none;filter: none;}
+
+
+
+/*---------------------Site-Settings---------------*/
+
+.block_tags ul.tag_cloud li{background-color:[[setting:sitebgc]]; }
+
+
+
+.block .content a:hover{ 
+    color:[[setting:sitebgc]]; 
+}
+/*---------------------Site-Settings---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
